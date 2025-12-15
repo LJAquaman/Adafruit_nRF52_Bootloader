@@ -12,6 +12,7 @@
 
 # Board specific
 -include src/boards/$(BOARD)/board.mk
+BOARD_LIST += my_custom_board
 
 SDK_PATH     = lib/sdk/components
 SDK11_PATH   = lib/sdk11/components
@@ -529,3 +530,4 @@ gdbflash: $(BUILD)/$(MERGED_FILE).hex
 
 gdb: $(BUILD)/$(OUT_NAME).out
 	$(GDB_BMP) $<
+
